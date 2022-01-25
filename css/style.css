@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and ( max-width:600px){
+
+    /* Definicion de Etiquetas */
+    
+    header{
+        height: 370px;
+    }
+    
+    main section{
+        background-color: rgb(252, 190, 183);
+        display: grid;
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 20% 10% 20% 20%;        
+        grid-template-areas: "titulo1"
+                             "texto1"
+                             "imagen1"
+                             "titulo2"
+                             "texto2"
+                             "imagen2";
+        
+        justify-items: center;
+        align-items: center;
+    }
+    
+    h4{
+        color: rgb(190, 34, 34);
+        font-family: 'Licorice', cursive;
+        font-size: 35px;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        height: 35px;
+        font-family: 'Licorice';
+        font-size: 22px;
+        padding-left: 20px;
+        
+    }
+    
+    nav ul li{
+        width: 150px;
+    }
+    
+    nav ul li:hover{
+        color: rgba(110, 180, 113, 0.603);
+        
+    }
+    
+    nav ul li a{
+        color: seashell;
+        text-decoration: none;
+        display: block;
+        padding-top: 15px;
+    }
+    
+    nav ul li a:hover{
+        color: teal;
+    }
+    
+    footer div{
+        display: inline-block;
+        background-color: salmon;    
+    }
+    
+    footer div ul li{
+        display: inline;
+    }
+    
+    p{
+            color:rgb(4, 129, 0);
+            font-size: 24px;
+    }
+    
+    /* Definicion de Clases */
+    
+    .topPart{
+        background-color: salmon;
+    }
+
+    .bottomPart{
+        display: inline-block;
+        height: 210px;
+        width: 100%;
+        background-color: salmon;
+        position: relative;
+        padding-top:10px;
+    
+    }
+    
+    .colorParrafo1{
+        color:rgb(4, 129, 0);
+        font-size: 24px;
+        grid-area: texto1;
+        align-self: center;
+        justify-self: center;
+        padding-left: 20px;
+    }
+
+    .colorParrafo2{
+        color:rgb(4, 129, 0);
+        font-size: 24px;
+        grid-area: texto2;
+        align-self: center;
+        justify-self: center;
+        padding-right: 20px;
+    }
+    
+    .tituloAlto{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 52px;
+        font-family: 'Licorice', cursive;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .galeryContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 450px;
+    }
+    
+    /* Definicion de IDs */
+    
+    #imagenEjemplo1{
+        grid-area:imagen1;
+        height: 70%;
+    }
+
+    #imagenEjemplo2{
+        grid-area:imagen2;
+        height: 90%;
+        width: 90%;   
+    }
+
+    #tituloAlto1{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: 'Licorice', cursive;
+        align-self: end;
+        grid-area: titulo1;
+    }
+
+    #tituloAlto2{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: 'Licorice', cursive;
+        align-self: end;
+        grid-area: titulo2;
+        
+    }
+
+    #mainLogo{ 
+        height: 250px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 65px;
+        border-style: solid;
+    }
+    
+    #socialNet img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    #VisitUs{
+        position: absolute;
+        height: 160px;
+        width: 170px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    #socialNet{
+        position: absolute;
+        height: 160px;
+        width: 170px;
+        right: 90px;
+        top: 10px;
+        text-align: center;
+    }
+    
+    #galImagFormat{
+        height: 250px;
+        width: 250px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 65px;
+        }
+    
+    
+
+    #contactDistribuidor{
+        display: block;
+        width: 100%;
+        margin-left: 30px;
+        padding-top: 250px;
+    }
+
+    #nuevosPedidos{
+        /*margin-top: 650px;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    #flowGaleria{
+        width: 100%;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 450px;
+        grid-area: titulo1;
+    }
+
+    #checkProductos{
+        display: flex;
+        width: 100%;
+        flex-direction:column;
+        justify-self: center;
+        margin-top: 550px;
+        grid-area: titulo1;
+        align-self: center;
+    }
+
+    #checkProductos img{
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+
+@media only screen and ( min-width:600px){
+
+    /* Definicion de Etiquetas */
+    
+    header{
+        height: 370px;
+    }
+    
+    main section{
+        background-color: rgb(252, 190, 183);
+        display: grid;
+        height: 1200px;
+        grid-template-columns: 35% 15% 15% 35%;
+        grid-template-rows: 10% 40% 10% 40%;        
+        grid-template-areas: "titulo1 titulo1 titulo1 titulo1"
+                             "texto1 texto1 texto1 imagen1"
+                             "titulo2 titulo2 titulo2 titulo2"
+                             "imagen2 texto2 texto2 texto2";
+        
+        justify-items: center;
+        align-items: center;
+    }
+    
+    h4{
+        color: rgb(190, 34, 34);
+        font-family: 'Licorice', cursive;
+        font-size: 35px;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        height: 35px;
+        font-family: 'Licorice';
+        font-size: 30px;
+        padding-left: 30px;
+        
+    }
+    
+    nav ul li{
+        width: 150px;
+    }
+    
+    nav ul li:hover{
+        color: rgba(110, 180, 113, 0.603);
+        
+    }
+    
+    nav ul li a{
+        color: seashell;
+        text-decoration: none;
+        display: block;
+        padding-top: 15px;
+    }
+    
+    nav ul li a:hover{
+        color: teal;
+    }
+    
+    footer div{
+        display: inline-block;
+        background-color: salmon;    
+    }
+    
+    footer div ul li{
+        display: inline;
+    }
+    
+    p{
+            color:rgb(4, 129, 0);
+            font-size: 24px;
+    }
+    
+    /* Definicion de Clases */
+    
+    .topPart{
+        background-color: salmon;
+    }
+
+    .bottomPart{
+        display: inline-block;
+        height: 210px;
+        width: 100%;
+        background-color: salmon;
+        position: relative;
+        padding-top:10px;
+    
+    }
+    
+    .colorParrafo1{
+        color:rgb(4, 129, 0);
+        font-size: 24px;
+        grid-area: texto1;
+        align-self: center;
+        justify-self: center;
+        padding-left: 20px;
+    }
+
+    .colorParrafo2{
+        color:rgb(4, 129, 0);
+        font-size: 24px;
+        grid-area: texto2;
+        align-self: center;
+        justify-self: center;
+        padding-right: 20px;
+    }
+    
+    .tituloAlto{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 72px;
+        font-family: 'Licorice', cursive;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .galeryContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Definicion de IDs */
+    
+    #imagenEjemplo1{
+        grid-area:imagen1;
+        height: 70%;
+    }
+
+    #imagenEjemplo2{
+        grid-area:imagen2;
+        height: 90%;
+        width: 90%;   
+    }
+
+    #tituloAlto1{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: 'Licorice', cursive;
+        align-self: end;
+        grid-area: titulo1;
+    }
+
+    #tituloAlto2{
+        color:indianred;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 65px;
+        font-family: 'Licorice', cursive;
+        align-self: end;
+        grid-area: titulo2;
+        
+    }
+
+    #mainLogo{ 
+        height: 250px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 65px;
+        border-style: solid;
+    }
+    
+    #socialNet img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    #VisitUs{
+        position: absolute;
+        height: 160px;
+        width: 170px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    #socialNet{
+        position: absolute;
+        height: 160px;
+        width: 170px;
+        right: 90px;
+        top: 10px;
+        text-align: center;
+    }
+    
+    #galImagFormat{
+        height: 100px;
+        width: 100px;
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 65px;
+        }
+    
+    
+
+    #contactDistribuidor{
+        display: block;
+        width: 100%;
+        margin-left: 30px;
+        padding-top: 250px;
+    }
+
+    #nuevosPedidos{
+        margin-top: 650px;
+    }
+
+    #flowGaleria{
+        width: 100%;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 750px;
+        grid-area: titulo2;
+    }
+
+    #checkProductos{
+        display: flex;
+        width: 100%;
+        flex-direction:column;
+        justify-self: center;
+        margin-top: 550px;
+        grid-area: titulo1;
+        align-self: center;
+    }
+
+    #checkProductos img{
+        height: 300px;
+        width: 300px;
+        justify-self: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+
+}
