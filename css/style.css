@@ -3,31 +3,18 @@
     padding: 0;
 }
 
+header{
+    height: 100%;
+}
+
 @media only screen and ( max-width:600px){
 
     /* Definicion de Etiquetas */
-    
-    header{
-        height: 370px;
+
+    main{
+        background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
     }
-    
-    main section{
-        background-color: rgb(252, 190, 183);
-        display: grid;
-        height: 1200px;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 20% 10% 20% 20%;        
-        grid-template-areas: "titulo1"
-                             "texto1"
-                             "imagen1"
-                             "titulo2"
-                             "texto2"
-                             "imagen2";
-        
-        justify-items: center;
-        align-items: center;
-    }
-    
+
     h4{
         color: rgb(190, 34, 34);
         font-family: 'Licorice', cursive;
@@ -38,33 +25,14 @@
         display: flex;
         justify-content: flex-start;
         list-style-type: none;
-        height: 35px;
         font-family: 'Licorice';
         font-size: 22px;
-        padding-left: 20px;
-        
     }
     
     nav ul li{
-        width: 150px;
+        width: auto;
     }
-    
-    nav ul li:hover{
-        color: rgba(110, 180, 113, 0.603);
-        
-    }
-    
-    nav ul li a{
-        color: seashell;
-        text-decoration: none;
-        display: block;
-        padding-top: 15px;
-    }
-    
-    nav ul li a:hover{
-        color: teal;
-    }
-    
+      
     footer div{
         display: inline-block;
         background-color: salmon;    
@@ -74,15 +42,11 @@
         display: inline;
     }
     
-    p{
-            color:rgb(4, 129, 0);
-            font-size: 24px;
-    }
-    
     /* Definicion de Clases */
     
     .topPart{
         background-color: salmon;
+        height: 390px;
     }
 
     .bottomPart{
@@ -92,25 +56,32 @@
         background-color: salmon;
         position: relative;
         padding-top:10px;
-    
     }
     
     .colorParrafo1{
-        color:rgb(4, 129, 0);
+        color:teal;
         font-size: 24px;
         grid-area: texto1;
         align-self: center;
         justify-self: center;
         padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Licorice';
+        font-weight: bold;
+        text-align: center;
     }
 
     .colorParrafo2{
-        color:rgb(4, 129, 0);
+        color:teal;
         font-size: 24px;
         grid-area: texto2;
         align-self: center;
         justify-self: center;
+        padding-left: 20px;
         padding-right: 20px;
+        font-family: 'Licorice';
+        font-weight: bold;
+        text-align: center;
     }
     
     .tituloAlto{
@@ -123,17 +94,45 @@
         padding-top: 40px;
         padding-bottom: 30px;
     }
-    
-    .galeryContainer{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 450px;
-    }
+
     
     /* Definicion de IDs */
+    
+        /*Grids para main de cada HTML*/
+
+        #gridIndex1{
+            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            display: grid;
+            height: 1800px;
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 5% 15% 20% 5% 15% 20% 10%;        
+            grid-template-areas: "espacio1" 
+                                 "titulo1"
+                                 "texto1"
+                                 "imagen1"
+                                 "titulo2"
+                                 "texto2"
+                                 "imagen2"
+                                 "espacio2";
+            justify-items: center;
+            align-items: center;
+        }
+
+        #gridGaleria1{
+            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            display: grid;
+            height: 600px;
+            grid-template-columns: 5% 90% 5%;
+            grid-template-rows:  10% 15% 65% 10%;
+            grid-template-areas: "espacio1 espacio1 espacio1"
+                                 "left titulo1 right"
+                                 "left galeria right"
+                                 "espacio2 espacio2 espacio2";
+            justify-items: center;
+            align-items: center;
+        }
+    
+        /*IDs en general*/
     
     #imagenEjemplo1{
         grid-area:imagen1;
@@ -164,7 +163,6 @@
         font-family: 'Licorice', cursive;
         align-self: end;
         grid-area: titulo2;
-        
     }
 
     #mainLogo{ 
@@ -202,32 +200,13 @@
     #galImagFormat{
         height: 250px;
         width: 250px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 65px;
-        }
-    
-    
+        grid-area:galeria;
+        }    
 
     #contactDistribuidor{
         display: block;
         width: 100%;
         margin-left: 30px;
-        padding-top: 250px;
-    }
-
-    #nuevosPedidos{
-        /*margin-top: 650px;*/
-        width: 100%;
-        height: 100%;
-    }
-
-    #flowGaleria{
-        width: 100%;
-        flex-direction: column;
-        justify-self: center;
-        margin-top: 450px;
-        grid-area: titulo1;
     }
 
     #checkProductos{
@@ -235,7 +214,6 @@
         width: 100%;
         flex-direction:column;
         justify-self: center;
-        margin-top: 550px;
         grid-area: titulo1;
         align-self: center;
     }
@@ -247,7 +225,18 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    
+    #nav-text-color{
+        color: white;
+    }
 
+    #nav-text-color:hover{
+        color: teal;
+    }
+
+    #nav-text-current{
+        color: teal;
+    }
 
 }
 
@@ -256,25 +245,10 @@
 
     /* Definicion de Etiquetas */
     
-    header{
-        height: 370px;
+    main{
+        background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
     }
-    
-    main section{
-        background-color: rgb(252, 190, 183);
-        display: grid;
-        height: 1200px;
-        grid-template-columns: 35% 15% 15% 35%;
-        grid-template-rows: 10% 40% 10% 40%;        
-        grid-template-areas: "titulo1 titulo1 titulo1 titulo1"
-                             "texto1 texto1 texto1 imagen1"
-                             "titulo2 titulo2 titulo2 titulo2"
-                             "imagen2 texto2 texto2 texto2";
-        
-        justify-items: center;
-        align-items: center;
-    }
-    
+
     h4{
         color: rgb(190, 34, 34);
         font-family: 'Licorice', cursive;
@@ -285,31 +259,12 @@
         display: flex;
         justify-content: flex-start;
         list-style-type: none;
-        height: 35px;
         font-family: 'Licorice';
         font-size: 30px;
-        padding-left: 30px;
-        
     }
     
     nav ul li{
         width: 150px;
-    }
-    
-    nav ul li:hover{
-        color: rgba(110, 180, 113, 0.603);
-        
-    }
-    
-    nav ul li a{
-        color: seashell;
-        text-decoration: none;
-        display: block;
-        padding-top: 15px;
-    }
-    
-    nav ul li a:hover{
-        color: teal;
     }
     
     footer div{
@@ -321,15 +276,11 @@
         display: inline;
     }
     
-    p{
-            color:rgb(4, 129, 0);
-            font-size: 24px;
-    }
-    
     /* Definicion de Clases */
     
     .topPart{
         background-color: salmon;
+        height: 390px;
     }
 
     .bottomPart{
@@ -339,25 +290,32 @@
         background-color: salmon;
         position: relative;
         padding-top:10px;
-    
     }
     
     .colorParrafo1{
-        color:rgb(4, 129, 0);
-        font-size: 24px;
+        color:teal;
+        font-size: 32px;
         grid-area: texto1;
         align-self: center;
         justify-self: center;
         padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Licorice';
+        font-weight: bold;
+        text-align: center;
     }
 
     .colorParrafo2{
-        color:rgb(4, 129, 0);
-        font-size: 24px;
+        color:teal;
+        font-size: 32px;
         grid-area: texto2;
         align-self: center;
         justify-self: center;
+        padding-left: 20px;
         padding-right: 20px;
+        font-family: 'Licorice';
+        font-weight: bold;
+        text-align: center;
     }
     
     .tituloAlto{
@@ -371,15 +329,41 @@
         padding-bottom: 30px;
     }
     
-    .galeryContainer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
     
     /* Definicion de IDs */
+
+            /*Grids para main de cada HTML*/
+        #gridIndex1{
+            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            display: grid;
+            height: 1400px;
+            grid-template-columns: 35% 15% 15% 35%;
+            grid-template-rows:  10% 10% 30% 10% 30% 10%;        
+            grid-template-areas: "espacio1 espacio1 espacio1 espacio1"
+                                 "titulo1 titulo1 titulo1 titulo1"
+                                 "texto1 texto1 texto1 imagen1"
+                                 "titulo2 titulo2 titulo2 titulo2"
+                                 "imagen2 texto2 texto2 texto2"
+                                 "espacio2 espacio2 espacio2 espacio2 ";
+            justify-items: center;
+            align-items: center;
+        }
+
+        #gridGaleria1{
+            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            display: grid;
+            height: 1000px;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows:  10% 10% 70% 10%;
+            grid-template-areas: "espacio1 espacio1 espacio1"
+                                 "left titulo1 right"
+                                 "left galeria right"
+                                 "espacio2 espacio2 espacio2";
+            justify-items: center;
+            align-items: center;
+        }
     
+        /*IDs en general*/
     #imagenEjemplo1{
         grid-area:imagen1;
         height: 70%;
@@ -445,15 +429,10 @@
     }
     
     #galImagFormat{
-        height: 100px;
-        width: 100px;
-        display: block;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 65px;
+        height: 620px;
+        width: 980px;
+        grid-area:galeria;
         }
-    
-    
 
     #contactDistribuidor{
         display: block;
@@ -462,24 +441,11 @@
         padding-top: 250px;
     }
 
-    #nuevosPedidos{
-        margin-top: 650px;
-    }
-
-    #flowGaleria{
-        width: 100%;
-        flex-direction: column;
-        justify-self: center;
-        margin-top: 750px;
-        grid-area: titulo2;
-    }
-
     #checkProductos{
         display: flex;
         width: 100%;
         flex-direction:column;
         justify-self: center;
-        margin-top: 550px;
         grid-area: titulo1;
         align-self: center;
     }
@@ -492,9 +458,16 @@
         padding-bottom: 15px;
     }
 
+    #nav-text-color{
+        color: white;
+    }
 
+    #nav-text-color:hover{
+        color: teal;
+    }
 
-
-
+    #nav-text-current{
+        color: teal;
+    }
 
 }
