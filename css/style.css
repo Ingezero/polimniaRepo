@@ -7,57 +7,52 @@ header{
     height: 100%;
 }
 
+main{
+    background: linear-gradient(180deg, rgb(252, 164, 154) 0%, rgb(170, 234, 245) 10%, rgb(170, 234, 245) 90%, rgb(252, 164, 154) 100%);
+}
+
+.topPart{
+    background-color: rgb(252, 164, 154);
+    height: 390px;
+}
+
+.bottomPart{
+    height: 210px;
+    background-color: rgb(252, 164, 154);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
 @media only screen and ( max-width:600px){
 
     /* Definicion de Etiquetas */
 
-    main{
-        background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
-    }
-
     h4{
         color: rgb(190, 34, 34);
         font-family: 'Licorice', cursive;
-        font-size: 35px;
+        font-size: 95px;
+        text-align: center;
     }
     
-    
+
     nav ul{
         display: flex;
         justify-content: flex-start;
         list-style-type: none;
         font-family: 'Licorice';
-        font-size: 22px;
+        font-size: 30px;
+        height: 40px;
     }
     
     nav ul li{
         width: auto;
     }
-      
-    footer div{
-        display: inline-block;
-        background-color: salmon;    
-    }
     
-    footer div ul li{
-        display: inline;
-    }
     
     /* Definicion de Clases */
-    
-    .topPart{
-        background-color: salmon;
-        height: 390px;
-    }
-
-    .bottomPart{
-        display: inline-block;
-        height: 210px;
-        width: 100%;
-        background-color: salmon;
-        position: relative;
-        padding-top:10px;
-    }
     
     .colorParrafo1{
         color:teal;
@@ -102,7 +97,6 @@ header{
         /*Grids para main de cada HTML*/
 
         #gridIndex1{
-            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
             display: grid;
             height: 1800px;
             grid-template-columns: 100%;
@@ -120,7 +114,6 @@ header{
         }
 
         #gridGaleria1{
-            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
             display: grid;
             height: 600px;
             grid-template-columns: 5% 90% 5%;
@@ -182,19 +175,10 @@ header{
     }
     
     #VisitUs{
-        position: absolute;
-        height: 160px;
-        width: 170px;
-        padding-left: 10px;
-        padding-top: 10px;
+        text-align: center;
     }
     
     #socialNet{
-        position: absolute;
-        height: 160px;
-        width: 170px;
-        right: 90px;
-        top: 10px;
         text-align: center;
     }
     
@@ -229,10 +213,13 @@ header{
     
     #nav-text-color{
         color: white;
+        transition: font-size 0.3s;
     }
 
     #nav-text-color:hover{
         color: teal;
+        font-size: 33px;
+        
     }
 
     #nav-text-current{
@@ -245,15 +232,12 @@ header{
 @media only screen and ( min-width:600px){
 
     /* Definicion de Etiquetas */
-    
-    main{
-        background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
-    }
 
     h4{
         color: rgb(190, 34, 34);
         font-family: 'Licorice', cursive;
-        font-size: 35px;
+        font-size: 95px;
+        text-align: center;
     }
     
     nav ul{
@@ -261,7 +245,8 @@ header{
         justify-content: flex-start;
         list-style-type: none;
         font-family: 'Licorice';
-        font-size: 30px;
+        font-size: 35px;
+        height: 40px;
     }
     
     nav ul li{
@@ -269,8 +254,7 @@ header{
     }
     
     footer div{
-        display: inline-block;
-        background-color: salmon;    
+        display: inline-block;  
     }
     
     footer div ul li{
@@ -278,20 +262,6 @@ header{
     }
     
     /* Definicion de Clases */
-    
-    .topPart{
-        background-color: salmon;
-        height: 390px;
-    }
-
-    .bottomPart{
-        display: inline-block;
-        height: 210px;
-        width: 100%;
-        background-color: salmon;
-        position: relative;
-        padding-top:10px;
-    }
     
     .colorParrafo1{
         color:teal;
@@ -335,7 +305,7 @@ header{
 
             /*Grids para main de cada HTML*/
         #gridIndex1{
-            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            /* background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%); */
             display: grid;
             height: 1400px;
             grid-template-columns: 35% 15% 15% 35%;
@@ -351,7 +321,7 @@ header{
         }
 
         #gridGaleria1{
-            background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%);
+            /* background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%); */
             display: grid;
             height: 1000px;
             grid-template-columns: 10% 80% 10%;
@@ -408,12 +378,12 @@ header{
     }
     
     #socialNet img{
-        height: 60px;
-        width: 60px;
+        height: 80px;
+        width: 80px;
+        
     }
     
     #VisitUs{
-        position: absolute;
         height: 160px;
         width: 170px;
         padding-left: 10px;
@@ -421,12 +391,8 @@ header{
     }
     
     #socialNet{
-        position: absolute;
-        height: 160px;
-        width: 170px;
-        right: 90px;
-        top: 10px;
-        text-align: center;
+        list-style-type: none;
+        flex-wrap: nowrap;
     }
     
     #galImagFormat{
@@ -461,10 +427,12 @@ header{
 
     #nav-text-color{
         color: white;
+        transition: font-size 0.3s;
     }
 
     #nav-text-color:hover{
         color: teal;
+        font-size: 37px;
     }
 
     #nav-text-current{
