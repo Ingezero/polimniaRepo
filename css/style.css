@@ -1,442 +1,300 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-header{
-    height: 100%;
-}
+header {
+  height: 100%; }
 
-main{
-    background: linear-gradient(180deg, rgb(252, 164, 154) 0%, rgb(170, 234, 245) 10%, rgb(170, 234, 245) 90%, rgb(252, 164, 154) 100%);
-}
+main {
+  background: linear-gradient(180deg, #fca49a 0%, #aaeaf5 10%, #aaeaf5 90%, #fca49a 100%); }
 
-.topPart{
-    background-color: rgb(252, 164, 154);
-    height: 390px;
-}
+.topPart {
+  background-color: #fca49a;
+  height: 390px; }
 
-.bottomPart{
-    height: 210px;
-    background-color: rgb(252, 164, 154);
-}
+.bottomPart {
+  height: 210px;
+  background-color: #fca49a; }
 
-ul{
+ul {
+  list-style-type: none; }
+
+@media (max-width: 600px) {
+  /* Definicion de Etiquetas */
+  h4 {
+    color: #be2222;
+    font-family: 'Licorice', cursive;
+    font-size: 95px;
+    text-align: center; }
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
     list-style-type: none;
-}
+    font-family: 'Licorice';
+    font-size: 30px;
+    height: 40px; }
+    nav ul li {
+      width: auto; }
+  /* Definicion de Clases */
+  .colorParrafo1 {
+    color: teal;
+    font-size: 24px;
+    grid-area: texto1;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
+  .colorParrafo2 {
+    color: teal;
+    font-size: 24px;
+    grid-area: texto2;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
+  .tituloAlto {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 52px;
+    font-family: 'Licorice', cursive;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  /* Definicion de IDs */
+  /*Grids para main de cada HTML*/
+  #gridIndex1 {
+    display: grid;
+    height: 1800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 5% 15% 20% 5% 15% 20% 10%;
+    grid-template-areas: "espacio1"  "titulo1" "texto1" "imagen1" "titulo2" "texto2" "imagen2" "espacio2";
+    justify-items: center;
+    align-items: center; }
+  #gridGaleria1 {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 10% 15% 65% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left galeria right" "espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center; }
+  /*IDs en general*/
+  #imagenEjemplo1 {
+    grid-area: imagen1;
+    height: 70%; }
+  #imagenEjemplo2 {
+    grid-area: imagen2;
+    height: 90%;
+    width: 90%; }
+  #tituloAlto1 {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Licorice', cursive;
+    align-self: end;
+    grid-area: titulo1; }
+  #tituloAlto2 {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Licorice', cursive;
+    align-self: end;
+    grid-area: titulo2; }
+  #mainLogo {
+    height: 250px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    border-style: solid; }
+  #VisitUs {
+    text-align: center; }
+  #socialNet {
+    text-align: center; }
+    #socialNet img {
+      height: 60px;
+      width: 60px; }
+  #galImagFormat {
+    height: 250px;
+    width: 250px;
+    grid-area: galeria; }
+  #contactDistribuidor {
+    display: block;
+    width: 100%;
+    margin-left: 30px; }
+  #checkProductos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-self: center;
+    grid-area: titulo1;
+    align-self: center; }
+    #checkProductos img {
+      height: 300px;
+      width: 300px;
+      justify-self: center;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  #nav-text-color {
+    color: white;
+    transition: font-size 0.3s; }
+    #nav-text-color :hover {
+      color: teal;
+      font-size: 33px; }
+  #nav-text-current {
+    color: teal; } }
 
-
-@media only screen and ( max-width:600px){
-
-    /* Definicion de Etiquetas */
-
-    h4{
-        color: rgb(190, 34, 34);
-        font-family: 'Licorice', cursive;
-        font-size: 95px;
-        text-align: center;
-    }
-    
-
-    nav ul{
-        display: flex;
-        justify-content: flex-start;
-        list-style-type: none;
-        font-family: 'Licorice';
-        font-size: 30px;
-        height: 40px;
-    }
-    
-    nav ul li{
-        width: auto;
-    }
-    
-    
-    /* Definicion de Clases */
-    
-    .colorParrafo1{
-        color:teal;
-        font-size: 24px;
-        grid-area: texto1;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .colorParrafo2{
-        color:teal;
-        font-size: 24px;
-        grid-area: texto2;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .tituloAlto{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 52px;
-        font-family: 'Licorice', cursive;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-
-    
-    /* Definicion de IDs */
-    
-        /*Grids para main de cada HTML*/
-
-        #gridIndex1{
-            display: grid;
-            height: 1800px;
-            grid-template-columns: 100%;
-            grid-template-rows: 10% 5% 15% 20% 5% 15% 20% 10%;        
-            grid-template-areas: "espacio1" 
-                                 "titulo1"
-                                 "texto1"
-                                 "imagen1"
-                                 "titulo2"
-                                 "texto2"
-                                 "imagen2"
-                                 "espacio2";
-            justify-items: center;
-            align-items: center;
-        }
-
-        #gridGaleria1{
-            display: grid;
-            height: 600px;
-            grid-template-columns: 5% 90% 5%;
-            grid-template-rows:  10% 15% 65% 10%;
-            grid-template-areas: "espacio1 espacio1 espacio1"
-                                 "left titulo1 right"
-                                 "left galeria right"
-                                 "espacio2 espacio2 espacio2";
-            justify-items: center;
-            align-items: center;
-        }
-    
-        /*IDs en general*/
-    
-    #imagenEjemplo1{
-        grid-area:imagen1;
-        height: 70%;
-    }
-
-    #imagenEjemplo2{
-        grid-area:imagen2;
-        height: 90%;
-        width: 90%;   
-    }
-
-    #tituloAlto1{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 65px;
-        font-family: 'Licorice', cursive;
-        align-self: end;
-        grid-area: titulo1;
-    }
-
-    #tituloAlto2{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 65px;
-        font-family: 'Licorice', cursive;
-        align-self: end;
-        grid-area: titulo2;
-    }
-
-    #mainLogo{ 
-        height: 250px;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 65px;
-        border-style: solid;
-    }
-    
-    #socialNet img{
-        height: 60px;
-        width: 60px;
-    }
-    
-    #VisitUs{
-        text-align: center;
-    }
-    
-    #socialNet{
-        text-align: center;
-    }
-    
-    #galImagFormat{
-        height: 250px;
-        width: 250px;
-        grid-area:galeria;
-        }    
-
-    #contactDistribuidor{
-        display: block;
-        width: 100%;
-        margin-left: 30px;
-    }
-
-    #checkProductos{
-        display: flex;
-        width: 100%;
-        flex-direction:column;
-        justify-self: center;
-        grid-area: titulo1;
-        align-self: center;
-    }
-
-    #checkProductos img{
-        height: 300px;
-        width: 300px;
-        justify-self: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
-    #nav-text-color{
-        color: white;
-        transition: font-size 0.3s;
-    }
-
-    #nav-text-color:hover{
-        color: teal;
-        font-size: 33px;
-        
-    }
-
-    #nav-text-current{
-        color: teal;
-    }
-
-}
-
-
-@media only screen and ( min-width:600px){
-
-    /* Definicion de Etiquetas */
-
-    h4{
-        color: rgb(190, 34, 34);
-        font-family: 'Licorice', cursive;
-        font-size: 95px;
-        text-align: center;
-    }
-    
-    nav ul{
-        display: flex;
-        justify-content: flex-start;
-        list-style-type: none;
-        font-family: 'Licorice';
-        font-size: 35px;
-        height: 40px;
-    }
-    
-    nav ul li{
-        width: 150px;
-    }
-    
-    footer div{
-        display: inline-block;  
-    }
-    
-    footer div ul li{
-        display: inline;
-    }
-    
-    /* Definicion de Clases */
-    
-    .colorParrafo1{
-        color:teal;
-        font-size: 32px;
-        grid-area: texto1;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .colorParrafo2{
-        color:teal;
-        font-size: 32px;
-        grid-area: texto2;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .tituloAlto{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 72px;
-        font-family: 'Licorice', cursive;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-    
-    
-    /* Definicion de IDs */
-
-            /*Grids para main de cada HTML*/
-        #gridIndex1{
-            /* background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%); */
-            display: grid;
-            height: 1400px;
-            grid-template-columns: 35% 15% 15% 35%;
-            grid-template-rows:  10% 10% 30% 10% 30% 10%;        
-            grid-template-areas: "espacio1 espacio1 espacio1 espacio1"
-                                 "titulo1 titulo1 titulo1 titulo1"
-                                 "texto1 texto1 texto1 imagen1"
-                                 "titulo2 titulo2 titulo2 titulo2"
-                                 "imagen2 texto2 texto2 texto2"
-                                 "espacio2 espacio2 espacio2 espacio2 ";
-            justify-items: center;
-            align-items: center;
-        }
-
-        #gridGaleria1{
-            /* background: linear-gradient(180deg, salmon 0%, rgb(252, 190, 183) 10%, rgb(252, 190, 183) 90%, salmon 100%); */
-            display: grid;
-            height: 1000px;
-            grid-template-columns: 10% 80% 10%;
-            grid-template-rows:  10% 10% 70% 10%;
-            grid-template-areas: "espacio1 espacio1 espacio1"
-                                 "left titulo1 right"
-                                 "left galeria right"
-                                 "espacio2 espacio2 espacio2";
-            justify-items: center;
-            align-items: center;
-        }
-    
-        /*IDs en general*/
-    #imagenEjemplo1{
-        grid-area:imagen1;
-        height: 70%;
-    }
-
-    #imagenEjemplo2{
-        grid-area:imagen2;
-        height: 90%;
-        width: 90%;   
-    }
-
-    #tituloAlto1{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 65px;
-        font-family: 'Licorice', cursive;
-        align-self: end;
-        grid-area: titulo1;
-    }
-
-    #tituloAlto2{
-        color:indianred;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 65px;
-        font-family: 'Licorice', cursive;
-        align-self: end;
-        grid-area: titulo2;
-        
-    }
-
-    #mainLogo{ 
-        height: 250px;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 65px;
-        border-style: solid;
-    }
-    
-    #socialNet img{
-        height: 80px;
-        width: 80px;
-        
-    }
-    
-    #VisitUs{
-        height: 160px;
-        width: 170px;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    
-    #socialNet{
-        list-style-type: none;
-        flex-wrap: nowrap;
-    }
-    
-    #galImagFormat{
-        height: 620px;
-        width: 980px;
-        grid-area:galeria;
-        }
-
-    #contactDistribuidor{
-        display: block;
-        width: 100%;
-        margin-left: 30px;
-        padding-top: 250px;
-    }
-
-    #checkProductos{
-        display: flex;
-        width: 100%;
-        flex-direction:column;
-        justify-self: center;
-        grid-area: titulo1;
-        align-self: center;
-    }
-
-    #checkProductos img{
-        height: 300px;
-        width: 300px;
-        justify-self: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    #nav-text-color{
-        color: white;
-        transition: font-size 0.3s;
-    }
-
-    #nav-text-color:hover{
-        color: teal;
-        font-size: 37px;
-    }
-
-    #nav-text-current{
-        color: teal;
-    }
-
-}
+@media (min-width: 600px) {
+  /* Definicion de Etiquetas */
+  h4 {
+    color: #be2222;
+    font-family: 'Licorice', cursive;
+    font-size: 95px;
+    text-align: center; }
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    font-family: 'Licorice';
+    font-size: 35px;
+    height: 40px; }
+    nav ul li {
+      width: 150px; }
+  footer div {
+    display: inline-block; }
+    footer div ul li {
+      display: inline; }
+  /* Definicion de Clases */
+  .colorParrafo1 {
+    color: teal;
+    font-size: 32px;
+    grid-area: texto1;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
+  .colorParrafo2 {
+    color: teal;
+    font-size: 32px;
+    grid-area: texto2;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
+  .tituloAlto {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 72px;
+    font-family: 'Licorice', cursive;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  /* Definicion de IDs */
+  /*Grids para main de cada HTML*/
+  #gridIndex1 {
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 35% 15% 15% 35%;
+    grid-template-rows: 10% 10% 30% 10% 30% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1 espacio1" "titulo1 titulo1 titulo1 titulo1" "texto1 texto1 texto1 imagen1" "titulo2 titulo2 titulo2 titulo2" "imagen2 texto2 texto2 texto2" "espacio2 espacio2 espacio2 espacio2 ";
+    justify-items: center;
+    align-items: center; }
+  #gridGaleria1 {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left galeria right" "espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center; }
+  /*IDs en general*/
+  #imagenEjemplo1 {
+    grid-area: imagen1;
+    height: 70%; }
+  #imagenEjemplo2 {
+    grid-area: imagen2;
+    height: 90%;
+    width: 90%; }
+  #tituloAlto1 {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Licorice', cursive;
+    align-self: end;
+    grid-area: titulo1; }
+  #tituloAlto2 {
+    color: indianred;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Licorice', cursive;
+    align-self: end;
+    grid-area: titulo2; }
+  #mainLogo {
+    height: 250px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    border-style: solid; }
+  #VisitUs {
+    height: 160px;
+    width: 170px;
+    padding-left: 10px;
+    padding-top: 10px; }
+  #socialNet {
+    list-style-type: none;
+    flex-wrap: nowrap; }
+    #socialNet img {
+      height: 80px;
+      width: 80px; }
+  #galImagFormat {
+    height: 620px;
+    width: 980px;
+    grid-area: galeria; }
+  #contactDistribuidor {
+    display: block;
+    width: 100%;
+    margin-left: 30px;
+    padding-top: 250px; }
+  #checkProductos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-self: center;
+    grid-area: titulo1;
+    align-self: center; }
+    #checkProductos img {
+      height: 300px;
+      width: 300px;
+      justify-self: center;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  #nav-text-color {
+    color: white;
+    transition: font-size 0.3s ease-in-out; }
+    #nav-text-color :hover {
+      color: teal;
+      font-size: 37px;
+      transition: font-size 0.3s ease-in-out; }
+  #nav-text-current {
+    color: teal; } }
