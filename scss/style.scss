@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+@mixin lowTitle($subColor, $subFont, $subSize, $subAlign){
+    color: $subColor;
+    font-family: $subFont;
+    font-size: $subSize;
+    text-align: $subAlign;
+}
+
 header{
     height: 100%;
 }
@@ -33,10 +40,7 @@ ul{
     /* Definicion de Etiquetas */
 
     h4{
-        color: rgb(190, 34, 34);
-        font-family: 'Licorice', cursive;
-        font-size: 95px;
-        text-align: center;
+        @include lowTitle(rgb(190, 34, 34), Licorice, 95px, center )
     }
     
 
@@ -56,10 +60,9 @@ ul{
     
     /* Definicion de Clases */
     
-    .colorParrafo1{
+    .colorParrafoMain{
         color: $colorTextos;
         font-size: 24px;
-        grid-area: texto1;
         align-self: center;
         justify-self: center;
         padding-left: 20px;
@@ -68,18 +71,15 @@ ul{
         font-weight: bold;
         text-align: center;
     }
+    
+    .colorParrafo1{
+        @extend .colorParrafoMain;
+        grid-area: texto1;
+    }
 
     .colorParrafo2{
-        color: $colorTextos;
-        font-size: 24px;
+        @extend .colorParrafoMain;
         grid-area: texto2;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
     }
     
     .tituloAlto{
@@ -218,7 +218,7 @@ ul{
         transition: font-size 0.3s;
 
         :hover{
-        color: $colorNavSelect;
+        @extend #nav-text-current;
         font-size: 33px;
         }
     }
@@ -235,10 +235,7 @@ ul{
     /* Definicion de Etiquetas */
 
     h4{
-        color: rgb(190, 34, 34);
-        font-family: 'Licorice', cursive;
-        font-size: 95px;
-        text-align: center;
+        @include lowTitle( rgb(190, 34, 34), 'Licorice', 95xp, center)
     }
     
     nav ul{
@@ -265,10 +262,9 @@ ul{
 
     /* Definicion de Clases */
     
-    .colorParrafo1{
+    .colorParrafoMainXL{
         color:$colorTextos;
         font-size: 32px;
-        grid-area: texto1;
         align-self: center;
         justify-self: center;
         padding-left: 20px;
@@ -278,17 +274,14 @@ ul{
         text-align: center;
     }
 
+    .colorParrafo1{
+        @extend .colorParrafoMainXL;
+        grid-area: texto1;
+    }
+
     .colorParrafo2{
-        color:$colorTextos;
-        font-size: 32px;
+        @extend .colorParrafoMainXL;
         grid-area: texto2;
-        align-self: center;
-        justify-self: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Licorice';
-        font-weight: bold;
-        text-align: center;
     }
     
     .tituloAlto{
@@ -426,12 +419,12 @@ ul{
 
     #nav-text-color{
         color: white;
-        transition: font-size 0.3s ease-in-out;
+        transition: font-size 0.1s ease-in-out;
         
         :hover{
             color: $colorNavSelect;
             font-size: 37px;
-            transition: font-size 0.3s ease-in-out;
+            transition: font-size 0.1s ease-in-out;
         }
     }
 

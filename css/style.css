@@ -23,7 +23,7 @@ ul {
   /* Definicion de Etiquetas */
   h4 {
     color: #be2222;
-    font-family: 'Licorice', cursive;
+    font-family: Licorice;
     font-size: 95px;
     text-align: center; }
   nav ul {
@@ -36,28 +36,20 @@ ul {
     nav ul li {
       width: auto; }
   /* Definicion de Clases */
+  .colorParrafoMain, .colorParrafo1, .colorParrafo2 {
+    color: teal;
+    font-size: 24px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
   .colorParrafo1 {
-    color: teal;
-    font-size: 24px;
-    grid-area: texto1;
-    align-self: center;
-    justify-self: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Licorice';
-    font-weight: bold;
-    text-align: center; }
+    grid-area: texto1; }
   .colorParrafo2 {
-    color: teal;
-    font-size: 24px;
-    grid-area: texto2;
-    align-self: center;
-    justify-self: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Licorice';
-    font-weight: bold;
-    text-align: center; }
+    grid-area: texto2; }
   .tituloAlto {
     color: indianred;
     font-style: italic;
@@ -149,17 +141,16 @@ ul {
     color: white;
     transition: font-size 0.3s; }
     #nav-text-color :hover {
-      color: teal;
       font-size: 33px; }
-  #nav-text-current {
+  #nav-text-current, #nav-text-color :hover {
     color: teal; } }
 
 @media (min-width: 600px) {
   /* Definicion de Etiquetas */
   h4 {
     color: #be2222;
-    font-family: 'Licorice', cursive;
-    font-size: 95px;
+    font-family: "Licorice";
+    font-size: 95xp;
     text-align: center; }
   nav ul {
     display: flex;
@@ -175,28 +166,20 @@ ul {
     footer div ul li {
       display: inline; }
   /* Definicion de Clases */
+  .colorParrafoMainXL, .colorParrafo1, .colorParrafo2 {
+    color: teal;
+    font-size: 32px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Licorice';
+    font-weight: bold;
+    text-align: center; }
   .colorParrafo1 {
-    color: teal;
-    font-size: 32px;
-    grid-area: texto1;
-    align-self: center;
-    justify-self: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Licorice';
-    font-weight: bold;
-    text-align: center; }
+    grid-area: texto1; }
   .colorParrafo2 {
-    color: teal;
-    font-size: 32px;
-    grid-area: texto2;
-    align-self: center;
-    justify-self: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Licorice';
-    font-weight: bold;
-    text-align: center; }
+    grid-area: texto2; }
   .tituloAlto {
     color: indianred;
     font-style: italic;
@@ -291,10 +274,10 @@ ul {
       padding-bottom: 15px; }
   #nav-text-color {
     color: white;
-    transition: font-size 0.3s ease-in-out; }
+    transition: font-size 0.1s ease-in-out; }
     #nav-text-color :hover {
       color: teal;
       font-size: 37px;
-      transition: font-size 0.3s ease-in-out; }
-  #nav-text-current {
+      transition: font-size 0.1s ease-in-out; }
+  #nav-text-current, #nav-text-color :hover {
     color: teal; } }
