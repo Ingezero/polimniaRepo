@@ -6,11 +6,12 @@ header {
   height: 100%; }
 
 main {
-  background: linear-gradient(180deg, #fca49a 0%, #aaeaf5 10%, #aaeaf5 90%, #fca49a 100%); }
+  background: linear-gradient(180deg, #fca49a 0%, #aaeaf5 10%, #aaeaf5 90%, #fca49a 100%);
+  height: 100%; }
 
 .topPart {
   background-color: #fca49a;
-  height: 390px; }
+  height: 130px; }
 
 .bottomPart {
   height: 210px;
@@ -18,6 +19,17 @@ main {
 
 ul {
   list-style-type: none; }
+
+.formaPedidos {
+  grid-area: panel1;
+  font-size: 16px; }
+  .formaPedidos div {
+    font-size: 18px;
+    color: maroon;
+    font-style: italic; }
+
+.videoIdea {
+  grid-area: panel2; }
 
 @media (max-width: 600px) {
   /* Definicion de Etiquetas */
@@ -54,7 +66,7 @@ ul {
     color: indianred;
     font-style: italic;
     font-weight: bold;
-    font-size: 52px;
+    font-size: 45px;
     font-family: 'Licorice', cursive;
     text-align: center;
     padding-top: 40px;
@@ -68,15 +80,35 @@ ul {
     grid-template-rows: 10% 5% 15% 20% 5% 15% 20% 10%;
     grid-template-areas: "espacio1"  "titulo1" "texto1" "imagen1" "titulo2" "texto2" "imagen2" "espacio2";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 150px; }
   #gridGaleria1 {
     display: grid;
-    height: 600px;
+    height: 850px;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 10% 15% 65% 10%;
+    grid-template-rows: 20% 15% 55% 10%;
     grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left galeria right" "espacio2 espacio2 espacio2";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 150px; }
+  #gridProdTemp1 {
+    display: grid;
+    height: 1150px;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 10% 10% 30% 10% 30% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left texto1 right" "left titulo2 right" "left galeria right" "espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center;
+    padding-top: 150px; }
+  #gridNuevosPedidos1 {
+    display: grid;
+    height: 1550px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 10% 35% 35% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left panel1 right" "left panel2 right" "espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px; }
   /*IDs en general*/
   #imagenEjemplo1 {
     grid-area: imagen1;
@@ -89,7 +121,7 @@ ul {
     color: indianred;
     font-style: italic;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 55px;
     font-family: 'Licorice', cursive;
     align-self: end;
     grid-area: titulo1; }
@@ -97,7 +129,7 @@ ul {
     color: indianred;
     font-style: italic;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 55px;
     font-family: 'Licorice', cursive;
     align-self: end;
     grid-area: titulo2; }
@@ -118,7 +150,11 @@ ul {
       width: 60px; }
   #galImagFormat {
     height: 250px;
-    width: 250px;
+    width: 450px;
+    grid-area: galeria; }
+  #galImagFormat2 {
+    height: 250px;
+    width: 450px;
     grid-area: galeria; }
   #contactDistribuidor {
     display: block;
@@ -193,20 +229,40 @@ ul {
   /*Grids para main de cada HTML*/
   #gridIndex1 {
     display: grid;
-    height: 1400px;
+    height: 1500px;
     grid-template-columns: 35% 15% 15% 35%;
     grid-template-rows: 10% 10% 30% 10% 30% 10%;
     grid-template-areas: "espacio1 espacio1 espacio1 espacio1" "titulo1 titulo1 titulo1 titulo1" "texto1 texto1 texto1 imagen1" "titulo2 titulo2 titulo2 titulo2" "imagen2 texto2 texto2 texto2" "espacio2 espacio2 espacio2 espacio2 ";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 200px; }
   #gridGaleria1 {
     display: grid;
-    height: 1000px;
+    height: 1200px;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 10% 10% 70% 10%;
     grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left galeria right" "espacio2 espacio2 espacio2";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 200px; }
+  #gridProdTemp1 {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 10% 20% 10% 40% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left texto1 right" "left titulo2 right" "left galeria right" "espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center;
+    padding-top: 150px; }
+  #gridNuevosPedidos1 {
+    display: grid;
+    height: 950px;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-areas: "espacio1 espacio1 espacio1 espacio1" "left titulo1 titulo1 right" "left panel1 panel2 right" "espacio2 espacio2 espacio2 espacio2";
+    justify-items: center;
+    align-items: center;
+    padding-top: 150px; }
   /*IDs en general*/
   #imagenEjemplo1 {
     grid-area: imagen1;
@@ -250,9 +306,15 @@ ul {
     #socialNet img {
       height: 80px;
       width: 80px; }
+  /* Pertenece a la galeria principal de "galeria.html" */
   #galImagFormat {
-    height: 620px;
+    height: 650px;
     width: 980px;
+    grid-area: galeria; }
+  /* Pertenece a la galeria de "prod_temporada.html" */
+  #galImagFormat2 {
+    height: 450px;
+    width: 780px;
     grid-area: galeria; }
   #contactDistribuidor {
     display: block;
@@ -260,7 +322,7 @@ ul {
     margin-left: 30px;
     padding-top: 250px; }
   #checkProductos {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     flex-direction: column;
     justify-self: center;

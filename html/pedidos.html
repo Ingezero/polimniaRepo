@@ -42,27 +42,29 @@
     
     <main>
         <section>
-            <article id="nuevosPedidos">
-                <h4 id="tituloAlto1"><b>Mandanos tu pedido</b></h4>
-                <iframe width="auto" height="auto" src="https://www.youtube.com/embed/ib1V_Z9sjHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <form action="#">
+            <article id="gridNuevosPedidos1">
+                <h4 id="tituloAlto1" class="animate__animated animate__pulse animate__slower"><b>Mandanos tu pedido</b></h4>
+                <div class="videoIdea">
+                    <iframe width="480" height="300" src="https://www.youtube.com/embed/ib1V_Z9sjHQ" title="Ideas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                
+                    <form action="#" class="formaPedidos">
                         <div>Nombre
-                            <input type="text" name="eventName" placeholder="Ingresa tu nombre completo">
+                            <input type="text" name="eventName" placeholder="Nombre completo"> 
                         </div>
                         <div>Numero telefonico
-                            <input type="number" name="eventNumber" placeholder="Ingresa tu telefono">
+                            <input type="number" name="eventNumber" placeholder="Número telefónico">
                         </div>
                         <div>Email
-                            <input type="email" name="eventName" placeholder="Ingresa tu correo electronico">
+                            <input type="email" name="eventName" placeholder="micorreo@dominio.com">
                         </div>
-                        <div><p>Detalles del evento</p>
+                        <div><br><strong>Detalles del evento</strong><br>
                             <input type="radio" name="eventSize" value="Complacer gusto propio">Complacer un gusto propio
                         </div>
                         <div>
                             <input type="radio" name="eventSize" value="less50">Evento hasta 50 personas o menos
                         </div>
                         <div>
-                            <input type="radio" name="eventSize" value="more50">Evento para mas de 50 personas
+                            <span><input type="radio" name="eventSize" value="more50">Evento para mas de 50 personas
                         </div>
                         <textarea name="Comentarios" id="" cols="50" rows="10" placeholder="Especifica los detalles de tu pedido"></textarea>
                         <div>
