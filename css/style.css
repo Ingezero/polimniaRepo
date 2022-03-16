@@ -93,7 +93,7 @@ ul {
     padding-top: 150px; }
   #gridProdTemp1 {
     display: grid;
-    height: 1150px;
+    height: 1650px;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 10% 10% 30% 10% 30% 10%;
     grid-template-areas: "espacio1 espacio1 espacio1" "left titulo1 right" "left texto1 right" "left titulo2 right" "left galeria right" "espacio2 espacio2 espacio2";
